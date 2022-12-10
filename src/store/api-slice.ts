@@ -3,13 +3,13 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const api = createApi({
   reducerPath: 'api',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:1337' }),
+  baseQuery: fetchBaseQuery({ baseUrl: import.meta.env.VITE_API_BASE_URL }),
   endpoints: (builder) => ({
     getCategories: builder.query<Category[], void>({
-      query: () => '/taxonomies',
+      query: () => '/api/taxonomies/food-type',
     }),
     getCategory: builder.query<Category, string>({
-      query: (_) => `/taxonomies`,
+      query: (_) => '/api/taxonomies/food-type',
       // transform the response to only return the category with the given id in typpescript
       transformResponse: (response: Category[], _, slug) => {
         const category = response.find((category) => category.slug === slug);
@@ -20,7 +20,10 @@ export const api = createApi({
       },
     }),
     getProducts: builder.query<Product[], string>({
-      query: (slug) => `/products?filter[taxons]=${slug}`,
+      query: (slug) => `/api/products?filter[taxons]=${slug}`,
+      transformResponse: (response: { data: Product[] }) => {
+        return response.data;
+      },
     }),
   }),
 });

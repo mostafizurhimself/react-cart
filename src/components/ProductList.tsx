@@ -1,5 +1,5 @@
 import { useGetProductsQuery } from '@/store/api-slice';
-import Loader from '../common/Loader';
+import Loader from './Loader';
 import ProductListItem from './ProductListItem';
 
 type Props = {

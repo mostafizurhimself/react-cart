@@ -1,4 +1,4 @@
-import CaloryGraph from '@/components/common/CaloryGraph';
+import CaloryGraph from '@/components/CaloryGraph';
 import { useAppDispatch } from '@/hooks/use-app-dispatch';
 import { useAppSelector } from '@/hooks/use-app-selector';
 import { decrementCartItem, getCartItemQuantity, incrementCartItem } from '@/store/cart-slice';
@@ -55,7 +55,7 @@ const ProductListItem = ({ product }: Props) => {
           <p className="text-sm font-medium">{product.variants[0]?.price.formatted}</p>
         </div>
       </div>
-      <img src={product.media[0]?.url} alt={product.name} className="h-[100px] w-[100px] rounded-lg object-cover" />
+      <img src={product.media[0]?.url} alt={product.name} className="h-[100px] w-[100px] rounded-lg object-fill" />
     </li>
   );
 };

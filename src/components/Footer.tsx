@@ -31,9 +31,9 @@ const Footer = () => {
         {cartItemsCount > 0 && (
           <span
             className={twMerge(
-              'absolute -right-2 -bottom-2 flex items-center justify-center rounded-lg bg-gray-900 text-white',
-              cartItemsCount > 9 ? 'h-6 w-6' : 'h-5 w-5',
-              cartItemsCount > 99 ? 'text-[10px]' : 'text-xs'
+              'absolute flex items-center justify-center rounded-md bg-gray-900 text-white',
+              cartItemsCount > 9 ? '-right-2 -bottom-2 h-5 w-5 ' : '-right-1 -bottom-1 h-4 w-4 ',
+              cartItemsCount > 99 ? 'text-[10px]' : 'text-[12px]'
             )}
           >
             {cartItemsCount > 99 ? '99+' : cartItemsCount}

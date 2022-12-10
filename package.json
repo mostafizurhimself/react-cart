@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "db:start": "json-server --watch db.json --port 1337"
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,css,md,json} --config ./.prettierrc",
+    "db:start": "json-server --watch db.json --routes api-routes.json --port 1337"
   },
   "dependencies": {
     "@headlessui/react": "^1.7.5",
@@ -20,12 +22,15 @@
     "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.5",
+    "redux-persist": "^6.0.0",
     "tailwind-merge": "^1.8.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.11",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
     "@vitejs/plugin-react": "^2.2.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.29.0",

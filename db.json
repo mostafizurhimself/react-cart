@@ -1,1462 +1,568 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+  "products": {
+    "data": [
+      {
+        "id": 1,
+        "name": "Pizza",
+        "slug": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "pizza",
+            "file_name": "pizza-margherita.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "variants": [
+          {
+            "id": 1,
+            "type": "pizza",
+            "title": "Margherita",
+            "price": {
+              "amount": 10,
+              "currency": "USD",
+              "formatted": "$10.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Burger",
+        "slug": "burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "burger",
+            "file_name": "burger-veggie.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "variants": [
+          {
+            "id": 2,
+            "type": "burger",
+            "title": "Veggie",
+            "price": {
+              "amount": 50,
+              "currency": "USD",
+              "formatted": "$50.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Pizza",
+        "slug": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "pizza",
+            "file_name": "pizza-margherita.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "variants": [
+          {
+            "id": 1,
+            "type": "pizza",
+            "title": "Margherita",
+            "price": {
+              "amount": 10,
+              "currency": "USD",
+              "formatted": "$10.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Burger",
+        "slug": "burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "burger",
+            "file_name": "burger-veggie.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "variants": [
+          {
+            "id": 2,
+            "type": "burger",
+            "title": "Veggie",
+            "price": {
+              "amount": 50,
+              "currency": "USD",
+              "formatted": "$50.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "Pizza",
+        "slug": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "pizza",
+            "file_name": "pizza-margherita.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "variants": [
+          {
+            "id": 1,
+            "type": "pizza",
+            "title": "Margherita",
+            "price": {
+              "amount": 10,
+              "currency": "USD",
+              "formatted": "$10.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "Burger",
+        "slug": "burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "burger",
+            "file_name": "burger-veggie.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "variants": [
+          {
+            "id": 2,
+            "type": "burger",
+            "title": "Veggie",
+            "price": {
+              "amount": 50,
+              "currency": "USD",
+              "formatted": "$50.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "Pizza",
+        "slug": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "pizza",
+            "file_name": "pizza-margherita.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "variants": [
+          {
+            "id": 1,
+            "type": "pizza",
+            "title": "Margherita",
+            "price": {
+              "amount": 10,
+              "currency": "USD",
+              "formatted": "$10.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Burger",
+        "slug": "burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "burger",
+            "file_name": "burger-veggie.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ],
+        "variants": [
+          {
+            "id": 2,
+            "type": "burger",
+            "title": "Veggie",
+            "price": {
+              "amount": 50,
+              "currency": "USD",
+              "formatted": "$50.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 21,
-      "name": "Pizza",
-      "slug": "pizza",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "pizza",
-          "file_name": "pizza-margherita.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 1,
-          "type": "pizza",
-          "title": "Margherita",
-          "price": {
-            "amount": 10,
-            "currency": "USD",
-            "formatted": "$10.00"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Pizza",
+        "slug": "pizza",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "pizza",
+            "file_name": "pizza-margherita.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/16/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    },
-    {
-      "id": 22,
-      "name": "Burger",
-      "slug": "burger",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
-      "media": [
-        {
-          "uuid": "a1b2c3d4",
-          "name": "burger",
-          "file_name": "burger-veggie.webp",
-          "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
-          "order": 1,
-          "type": "image",
-          "mime_type": "image/jpeg",
-          "extension": "webp"
-        }
-      ],
-      "variants": [
-        {
-          "id": 2,
-          "type": "burger",
-          "title": "Veggie",
-          "price": {
-            "amount": 50,
-            "currency": "USD",
-            "formatted": "$50.00"
+        ],
+        "variants": [
+          {
+            "id": 1,
+            "type": "pizza",
+            "title": "Margherita",
+            "price": {
+              "amount": 10,
+              "currency": "USD",
+              "formatted": "$10.00"
+            }
           }
-        }
-      ],
-      "meta_fields": [
-        {
-          "key": "gluten-free",
-          "value": true
-        },
-        {
-          "key": "calories",
-          "value": 700
-        },
-        {
-          "key": "protein",
-          "value": 12
-        },
-        {
-          "key": "carbs",
-          "value": 12.5
-        },
-        {
-          "key": "fibre",
-          "value": 11
-        },
-        {
-          "key": "rating",
-          "value": 4
-        }
-      ]
-    }
-  ],
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Burger",
+        "slug": "burger",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem. Sed euismod, nisl vel tincidunt lacinia, nunc est aliquam nisl, vitae aliquam nisl nunc vel lorem.",
+        "media": [
+          {
+            "uuid": "a1b2c3d4",
+            "name": "burger",
+            "file_name": "burger-veggie.webp",
+            "url": "https://threls-shop-staging.ams3.digitaloceanspaces.com/stagingshop/9/pizza-margherita.webp",
+            "order": 1,
+            "type": "image",
+            "mime_type": "image/jpeg",
+            "extension": "webp"
+          }
+        ],
+        "variants": [
+          {
+            "id": 2,
+            "type": "burger",
+            "title": "Veggie",
+            "price": {
+              "amount": 50,
+              "currency": "USD",
+              "formatted": "$50.00"
+            }
+          }
+        ],
+        "meta_fields": [
+          {
+            "key": "gluten-free",
+            "value": true
+          },
+          {
+            "key": "calories",
+            "value": 700
+          },
+          {
+            "key": "protein",
+            "value": 12
+          },
+          {
+            "key": "carbs",
+            "value": 12.5
+          },
+          {
+            "key": "fibre",
+            "value": 11
+          },
+          {
+            "key": "rating",
+            "value": 4
+          }
+        ]
+      }
+    ]
+  },
   "taxonomies": [
     {
       "id": 1,

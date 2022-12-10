@@ -1,5 +1,5 @@
 import Layout from '@/components/Layout';
-import CategoryList from '@/components/partials/CategoryList';
+import CategoryList from '@/components/CategoryList';
 
 const HomePage = () => {
   return (

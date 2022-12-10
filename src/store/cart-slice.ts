@@ -19,7 +19,7 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     incrementCartItem: (state, action: PayloadAction<LineItem>) => {
-      let found = state.items.find((lineItem: LineItem) => action.payload.product.id == lineItem.product.id);
+      const found = state.items.find((lineItem: LineItem) => action.payload.product.id == lineItem.product.id);
       if (found) {
         found.quantity = found.quantity + action.payload.quantity;
       } else {
@@ -27,7 +27,7 @@ export const cartSlice = createSlice({
       }
     },
     decrementCartItem: (state, action: PayloadAction<{ productId: number; quantity: number }>) => {
-      let found = state.items.find((lineItem: LineItem) => action.payload.productId == lineItem.product.id);
+      const found = state.items.find((lineItem: LineItem) => action.payload.productId == lineItem.product.id);
       if (found && found.quantity > 1) {
         found.quantity = found.quantity - action.payload.quantity;
       }
@@ -36,7 +36,7 @@ export const cartSlice = createSlice({
       }
     },
     removeCartItem: (state, action: PayloadAction<{ productId: number }>) => {
-      let found = state.items.find((lineItem: LineItem) => action.payload.productId == lineItem.product.id);
+      const found = state.items.find((lineItem: LineItem) => action.payload.productId == lineItem.product.id);
       if (found) {
         state.items.splice(state.items.indexOf(found), 1);
       }
@@ -59,8 +59,15 @@ export const getCartTotal = (state: RootState) => {
     0
   );
 };
+export const getDeliveryCost = (state: RootState) => {
+  const total = state.cart.items.reduce(
+    (total: number, lineItem: LineItem) => total + lineItem.product.variants[0].price.amount * lineItem.quantity,
+    0
+  );
+  return total * 0.05;
+};
 export const getCartItemQuantity = (state: RootState, productId: number) => {
-  let found = state.cart.items.find((lineItem: LineItem) => productId == lineItem.product.id);
+  const found = state.cart.items.find((lineItem: LineItem) => productId == lineItem.product.id);
   return found ? found.quantity : 0;
 };
 

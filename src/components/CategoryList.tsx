@@ -1,6 +1,6 @@
 import { useGetCategoriesQuery } from '@/store/api-slice';
 import { Link } from 'react-router-dom';
-import Loader from '@/components/common/Loader';
+import Loader from '@/components/Loader';
 
 const CategoryList = () => {
   const { data: categories, isLoading, isError } = useGetCategoriesQuery();

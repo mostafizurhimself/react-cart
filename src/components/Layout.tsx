@@ -1,10 +1,9 @@
+import Footer from '@/components/Footer';
 import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { FaChevronLeft } from 'react-icons/fa';
-import { Link, To } from 'react-router-dom';
+import { To } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
-import Footer from '@/components/common/Footer';
-import Header from './common/Header';
+import Header from './Header';
 
 type Props = {
   title: string;
@@ -18,11 +17,11 @@ type Props = {
 const Layout = ({ title, className, previousPath, showHeader = true, showFooter = true, children }: Props) => {
   const calculatedHeight = useMemo(() => {
     if (showHeader && showFooter) {
-      return 'calc(100vh - 112px)';
+      return 'calc(100vh - 114px)';
     }
 
     if (showHeader || showFooter) {
-      return 'calc(100vh - 56px)';
+      return 'calc(100vh - 57px)';
     }
 
     return '100vh';
@@ -37,7 +36,7 @@ const Layout = ({ title, className, previousPath, showHeader = true, showFooter 
       <div className={twMerge('mx-auto h-screen max-w-md border', className)}>
         {showHeader && <Header title={title} previousPath={previousPath} />}
 
-        <main className="overflow-auto" style={{ height: calculatedHeight }}>
+        <main className="flex flex-col overflow-auto" style={{ height: calculatedHeight }}>
           {children}
         </main>
         {showFooter && <Footer />}

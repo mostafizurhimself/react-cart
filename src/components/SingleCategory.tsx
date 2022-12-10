@@ -1,6 +1,4 @@
-import { useParams } from 'react-router-dom';
-
-import Loader from '@/components/common/Loader';
+import Loader from '@/components/Loader';
 import { useGetCategoryQuery } from '@/store/api-slice';
 import ProductList from './ProductList';
 
@@ -18,7 +16,7 @@ const SingleCategory = ({ slug }: Props) => {
 
   if (isLoading) {
     return (
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-screen items-center justify-center">
         <Loader />
       </div>
     );
@@ -26,7 +24,7 @@ const SingleCategory = ({ slug }: Props) => {
 
   if (isError) {
     return (
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-screen items-center justify-center">
         <p className="text-center text-red-500">Oops! Something went wrong.</p>
       </div>
     );
