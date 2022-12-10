@@ -8,10 +8,21 @@ export const api = createApi({
     getCategories: builder.query<Category[], void>({
       query: () => '/taxonomies',
     }),
-    getProducts: builder.query<Product[], void>({
-      query: () => '/products',
+    getCategory: builder.query<Category, string>({
+      query: (_) => `/taxonomies`,
+      // transform the response to only return the category with the given id in typpescript
+      transformResponse: (response: Category[], _, slug) => {
+        const category = response.find((category) => category.slug === slug);
+        if (category) {
+          return category;
+        }
+        throw new Error('Category not found');
+      },
+    }),
+    getProducts: builder.query<Product[], string>({
+      query: (slug) => `/products?filter[taxons]=${slug}`,
     }),
   }),
 });
 
-export const { useGetCategoriesQuery, useGetProductsQuery } = api;
+export const { useGetCategoriesQuery, useGetCategoryQuery, useGetProductsQuery } = api;

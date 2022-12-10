@@ -1,9 +1,10 @@
 import Layout from '@/components/Layout';
+import CategoryList from '@/components/partials/CategoryList';
 
 const HomePage = () => {
   return (
     <Layout title="Categories">
-      <div>Categories</div>
+      <CategoryList />
     </Layout>
   );
 };

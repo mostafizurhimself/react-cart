@@ -42,3 +42,8 @@ export type Product = {
   variants: Variant[];
   meta_fields: MetaField[];
 };
+
+export type LineItem = {
+  product: Product;
+  quantity: number;
+};

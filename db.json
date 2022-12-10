@@ -1460,103 +1460,53 @@
   "taxonomies": [
     {
       "id": 1,
-      "name": "Pizza",
-      "slug": "pizza"
+      "name": "Mexican",
+      "slug": "mexican"
     },
     {
       "id": 2,
-      "name": "Burger",
-      "slug": "burger"
+      "name": "Italian",
+      "slug": "italian"
     },
     {
       "id": 3,
-      "name": "Dessert",
-      "slug": "dessert"
+      "name": "American",
+      "slug": "american"
     },
     {
       "id": 4,
-      "name": "Drinks",
-      "slug": "drinks"
+      "name": "Indian",
+      "slug": "indian"
     },
     {
       "id": 5,
-      "name": "Sides",
-      "slug": "sides"
+      "name": "Chinese",
+      "slug": "chinese"
     },
     {
       "id": 6,
-      "name": "Salads",
-      "slug": "salads"
+      "name": "Japanese",
+      "slug": "japanese"
     },
     {
       "id": 7,
-      "name": "Kids",
-      "slug": "kids"
+      "name": "Thai",
+      "slug": "thai"
     },
     {
       "id": 8,
-      "name": "Appetizers",
-      "slug": "appetizers"
+      "name": "French",
+      "slug": "french"
     },
     {
       "id": 9,
-      "name": "Sandwiches",
-      "slug": "sandwiches"
+      "name": "Spanish",
+      "slug": "spanish"
     },
     {
       "id": 10,
-      "name": "Breakfast",
-      "slug": "breakfast"
-    },
-    {
-      "id": 11,
-      "name": "Lunch",
-      "slug": "lunch"
-    },
-    {
-      "id": 12,
-      "name": "Dinner",
-      "slug": "dinner"
-    },
-    {
-      "id": 13,
-      "name": "Desserts",
-      "slug": "desserts"
-    },
-    {
-      "id": 14,
-      "name": "Drinks",
-      "slug": "drinks"
-    },
-    {
-      "id": 15,
-      "name": "Sides",
-      "slug": "sides"
-    },
-    {
-      "id": 16,
-      "name": "Salads",
-      "slug": "salads"
-    },
-    {
-      "id": 17,
-      "name": "Kids",
-      "slug": "kids"
-    },
-    {
-      "id": 18,
-      "name": "Appetizers",
-      "slug": "appetizers"
-    },
-    {
-      "id": 19,
-      "name": "Sandwiches",
-      "slug": "sandwiches"
-    },
-    {
-      "id": 20,
-      "name": "Breakfast",
-      "slug": "breakfast"
+      "name": "German",
+      "slug": "german"
     }
   ]
 }

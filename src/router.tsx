@@ -1,9 +1,10 @@
 import React, { Suspense } from 'react';
 import { useRoutes } from 'react-router';
 import { RouteObject } from 'react-router-dom';
+import Error404 from './components/Error404';
 
 const HomePage = React.lazy(() => import('@/pages/home'));
-const ProductPage = React.lazy(() => import('@/pages/products'));
+const CategoryPage = React.lazy(() => import('@/pages/category'));
 const CartPage = React.lazy(() => import('@/pages/cart'));
 
 const routes: RouteObject[] = [
@@ -12,12 +13,16 @@ const routes: RouteObject[] = [
     element: <HomePage />,
   },
   {
-    path: '/products',
-    element: <ProductPage />,
+    path: '/categories/:slug',
+    element: <CategoryPage />,
   },
   {
     path: '/cart',
     element: <CartPage />,
+  },
+  {
+    path: '*',
+    element: <Error404 />,
   },
 ];
 

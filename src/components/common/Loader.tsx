@@ -8,7 +8,7 @@ type Props = {
 const Loader = ({ className }: Props) => {
   return (
     <div
-      className={twMerge('h-24 w-24 animate-spin rounded-full border-t-2 border-b-2 border-purple-500', className)}
+      className={twMerge('h-24 w-24 animate-spin rounded-full border-t-2 border-b-2 border-primary-500', className)}
     ></div>
   );
 };

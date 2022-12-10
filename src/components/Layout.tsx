@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
+import { FaChevronLeft } from 'react-icons/fa';
 import { Link, To } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
-import { FiChevronLeft } from 'react-icons/fi';
+import Footer from '@/components/common/Footer';
+import Header from './common/Header';
 
 type Props = {
   title: string;
   className?: string;
   previousPath?: To;
+  showHeader?: boolean;
+  showFooter?: boolean;
   children: React.ReactNode;
 };
 
-const Layout = ({ title, className, previousPath, children }: Props) => {
+const Layout = ({ title, className, previousPath, showHeader = true, showFooter = true, children }: Props) => {
+  const calculatedHeight = useMemo(() => {
+    if (showHeader && showFooter) {
+      return 'calc(100vh - 112px)';
+    }
+
+    if (showHeader || showFooter) {
+      return 'calc(100vh - 56px)';
+    }
+
+    return '100vh';
+  }, [showFooter, showHeader]);
+
   return (
     <>
       <Helmet title={title} titleTemplate={`%s - React Cart`}>
@@ -19,21 +35,12 @@ const Layout = ({ title, className, previousPath, children }: Props) => {
       </Helmet>
 
       <div className={twMerge('mx-auto h-screen max-w-md border', className)}>
-        <header className="sticky top-0 flex h-14 items-center justify-center bg-white shadow-sm">
-          {previousPath && (
-            <Link to={previousPath}>
-              <FiChevronLeft
-                className="absolute top-[18px] left-4 text-gray-600 transition-colors duration-150 hover:text-gray-900"
-                size={20}
-              />
-            </Link>
-          )}
-          <h1 className="text-xl font-semibold">{title}</h1>
-        </header>
+        {showHeader && <Header title={title} previousPath={previousPath} />}
 
-        <main className="px-4">{children}</main>
-
-        <footer className="">Footer</footer>
+        <main className="overflow-auto" style={{ height: calculatedHeight }}>
+          {children}
+        </main>
+        {showFooter && <Footer />}
       </div>
     </>
   );
