@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import React, { useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { To } from 'react-router-dom';
+import SimpleBar from 'simplebar-react';
 import { twMerge } from 'tailwind-merge';
 import Header from './Header';
 
@@ -36,9 +37,9 @@ const Layout = ({ title, className, previousPath, showHeader = true, showFooter 
       <div className={twMerge('mx-auto h-screen max-w-md border', className)}>
         {showHeader && <Header title={title} previousPath={previousPath} />}
 
-        <main className="flex flex-col overflow-auto" style={{ height: calculatedHeight }}>
-          {children}
-        </main>
+        <SimpleBar style={{ height: calculatedHeight, minHeight: calculatedHeight }}>
+          <main className="flex flex-grow flex-col">{children}</main>
+        </SimpleBar>
         {showFooter && <Footer />}
       </div>
     </>

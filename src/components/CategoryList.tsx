@@ -12,7 +12,7 @@ const CategoryList = () => {
 
   if (isLoading) {
     return (
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-[calc(100vh-114px)] items-center justify-center">
         <Loader />
       </div>
     );
@@ -20,7 +20,7 @@ const CategoryList = () => {
 
   if (isError) {
     return (
-      <div className="flex h-full items-center justify-center">
+      <div className="flex h-[calc(100vh-114px)] items-center justify-center">
         <p className="text-center text-red-500">Oops! Something went wrong.</p>
       </div>
     );

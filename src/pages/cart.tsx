@@ -5,6 +5,7 @@ import { useAppDispatch } from '@/hooks/use-app-dispatch';
 import { useAppSelector } from '@/hooks/use-app-selector';
 import { clearCart, getCartItems, getCartTotal, getDeliveryCost } from '@/store/cart-slice';
 import { useMemo, useState } from 'react';
+import SimpleBar from 'simplebar-react';
 
 const CartPage = () => {
   const dispatch = useAppDispatch();
@@ -29,7 +30,7 @@ const CartPage = () => {
   if (cartItems.length === 0) {
     return (
       <Layout title="Cart" previousPath={'/'}>
-        <div className="flex h-full items-center justify-center">
+        <div className="flex h-[calc(100vh-114px)] items-center justify-center">
           <p className="text-2xl font-semibold text-gray-500">Your cart is empty</p>
         </div>
       </Layout>
@@ -38,11 +39,13 @@ const CartPage = () => {
 
   return (
     <Layout title="Cart" previousPath={'/'}>
-      <ul className="max-h-[48vh] divide-y overflow-auto px-4">
-        {cartItems.map((item) => (
-          <CartItem key={item.product.id} cartItem={item} />
-        ))}
-      </ul>
+      <SimpleBar style={{ maxHeight: '48vh' }}>
+        <ul className="divide-y overflow-auto px-4">
+          {cartItems.map((item) => (
+            <CartItem key={item.product.id} cartItem={item} />
+          ))}
+        </ul>
+      </SimpleBar>
       <div className="mt-4 px-4">
         <div className="flex items-center border-t py-4">
           <div className="h-[80px] w-[80px] rounded-lg bg-orange-100 p-4">
