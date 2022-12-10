@@ -49,7 +49,7 @@ const CartPage = () => {
       <div className="mt-4 px-4">
         <div className="flex items-center border-t py-4">
           <div className="h-[80px] w-[80px] rounded-lg bg-orange-100 p-4">
-            <img src={'/images/delivery.png'} alt={'delivery-icon'} className="object-fill" />
+            <img src={'/images/delivery.png'} alt={'delivery-icon'} className="object-cover" />
           </div>
           <p className="ml-6 text-sm font-medium">Delivery</p>
 

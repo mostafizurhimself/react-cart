@@ -22,13 +22,13 @@ const CartItem = ({ cartItem }: Props) => {
     <li key={cartItem.product.id} className="flex items-center py-4">
       <img
         src={cartItem.product.media[0]?.url}
-        alt={cartItem.product.name}
-        className="h-[80px] w-[80px] rounded-lg object-fill"
+        alt={cartItem.product.title}
+        className="h-[80px] w-[80px] rounded-lg object-cover"
       />
       <div className="ml-6 flex items-center gap-2">
         <p className="text-sm">{cartItem.quantity}</p>
         <HiX size={12} />
-        <h3 className="text-sm font-semibold">{cartItem.product.name}</h3>
+        <h3 className="text-sm font-semibold">{cartItem.product.title}</h3>
       </div>
 
       <p className="ml-auto text-sm font-semibold text-gray-900">{cartItem.product.variants[0]?.price.formatted}</p>

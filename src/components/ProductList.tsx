@@ -26,7 +26,7 @@ const ProductList = ({ categorySlug }: Props) => {
   }
 
   return (
-    <ul className="my-4 h-[1200px] divide-y px-4">
+    <ul className="my-4 divide-y px-4">
       {products?.map((item) => (
         <ProductListItem key={item.id} product={item} />
       ))}

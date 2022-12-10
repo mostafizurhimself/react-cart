@@ -54,17 +54,18 @@ export const getCartItemsCount = (state: RootState) => {
   return state.cart.items.reduce((total: number, lineItem: LineItem) => total + lineItem.quantity, 0);
 };
 export const getCartTotal = (state: RootState) => {
-  return state.cart.items.reduce(
+  const total = state.cart.items.reduce(
     (total: number, lineItem: LineItem) => total + lineItem.product.variants[0].price.amount * lineItem.quantity,
     0
   );
+  return total / 100;
 };
 export const getDeliveryCost = (state: RootState) => {
   const total = state.cart.items.reduce(
     (total: number, lineItem: LineItem) => total + lineItem.product.variants[0].price.amount * lineItem.quantity,
     0
   );
-  return total * 0.05;
+  return (total * 0.05) / 100;
 };
 export const getCartItemQuantity = (state: RootState, productId: number) => {
   const found = state.cart.items.find((lineItem: LineItem) => productId == lineItem.product.id);

@@ -35,14 +35,14 @@ const ProductListItem = ({ product }: Props) => {
   return (
     <li className="flex gap-4 py-6 ">
       <div className="flex-grow">
-        <h3 className="text-sm font-semibold">{product.name}</h3>
-        <div className="products-center flex gap-4">
+        <h3 className="text-sm font-semibold">{product.title}</h3>
+        <div className="flex items-center gap-4">
           {renderMeta(product, 'protein')}
           {renderMeta(product, 'carbs')}
           {renderMeta(product, 'fibre')}
           {renderCaloryGraph(product)}
         </div>
-        <div className="products-center mt-1 flex gap-6">
+        <div className="mt-1 flex items-center gap-6">
           <div className="inline-flex items-center overflow-hidden rounded-lg bg-gray-200">
             <button type="button" className="h-full px-3 font-bold" onClick={handleDecrement}>
               -
@@ -55,7 +55,7 @@ const ProductListItem = ({ product }: Props) => {
           <p className="text-sm font-medium">{product.variants[0]?.price.formatted}</p>
         </div>
       </div>
-      <img src={product.media[0]?.url} alt={product.name} className="h-[100px] w-[100px] rounded-lg object-fill" />
+      <img src={product.media[0]?.url} alt={product.title} className="h-[100px] w-[100px] rounded-lg object-cover" />
     </li>
   );
 };

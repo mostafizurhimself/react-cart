@@ -35,7 +35,7 @@ export type MetaField = {
 
 export type Product = {
   id: number;
-  name: string;
+  title: string;
   slug: string;
   description: string;
   media: Media[];
