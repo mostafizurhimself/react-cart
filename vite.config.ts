@@ -10,5 +10,8 @@ export default defineConfig({
       '@core': path.resolve(__dirname, './src/@core'),
     },
   },
+  server: {
+    port: 3000,
+  },
   plugins: [react()],
 });
